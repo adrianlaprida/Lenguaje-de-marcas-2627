@@ -1,0 +1,232 @@
+
+/* =================================
+   1. RESET Y BOX MODEL
+================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef2f7;
+    color: #263238;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* =================================
+   2. CABECERA
+================================= */
+
+.cabecera {
+    background: linear-gradient(135deg, #101f35, #1769aa);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cabecera h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+/* =================================
+   3. NAVEGACIÓN
+================================= */
+
+.navegacion {
+    background-color: #172b46;
+    padding: 18px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navegacion ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+
+.navegacion li {
+    color: white;
+    font-weight: bold;
+}
+
+.navegacion a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navegacion a:hover {
+    color: #55c5ff;
+}
+
+/* =================================
+   4. CATÁLOGO DE PRODUCTOS
+================================= */
+
+.catalogo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+
+    background-color: white;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 1200px;
+
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalogo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto al pasar el ratón */
+
+.catalogo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
+}
+
+/* =================================
+   5. CONTENIDO DE LAS TARJETAS
+================================= */
+
+.catalogo article {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.catalogo h2 {
+    color: #1769aa;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #1769aa;
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+}
+
+.catalogo p {
+    font-size: 0.95rem;
+    color: #455a64;
+}
+
+/* =================================
+   6. IMÁGENES
+================================= */
+
+.catalogo img {
+    width: 100%;
+    max-width: 350px;
+    height: 220px;
+    object-fit: contain;
+    justify-self: center;
+    align-self: center;
+    padding: 10px;
+}
+
+/* =================================
+   7. ETIQUETA DE OFERTA
+================================= */
+
+.catalogo mark {
+    background-color: #dff7e5;
+    color: #16803c;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 20px;
+    justify-self: start;
+}
+
+/* =================================
+   8. FECHA
+================================= */
+
+.catalogo time {
+    color: #78909c;
+    font-size: 0.85rem;
+}
+
+/* =================================
+   9. BOTONES
+================================= */
+
+.catalogo button {
+    background-color: #1769aa;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+
+    justify-self: start;
+    align-self: end;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.catalogo button:hover {
+    background-color: #0d4778;
+    transform: scale(1.05);
+}
+
+/* =================================
+   10. PIE DE PÁGINA
+================================= */
+
+footer {
+    background-color: #172b46;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 35px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+/* =================================
+   11. RESPONSIVE
+================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .cabecera h1 {
+        font-size: 1.4rem;
+    }
+
+    .navegacion ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .catalogo {
+        padding: 15px;
+    }
+
+    .catalogo img {
+        height: 180px;
+    }
+}
