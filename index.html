@@ -1,124 +1,243 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de componentes Hardware</title>
     <link rel="stylesheet" href="estilos.css">
-    <title>Document</title>
 </head>
 
 <body>
+
+    <!-- CABECERA -->
     <header class="cabecera">
-        <h1>Catalogo y comparador de componentes de hardware</h1>
+        <h1>Catálogo y comparador de componentes de hardware</h1>
+        <p>Los mejores componentes para tu ordenador</p>
     </header>
 
+    <!-- NAVEGACIÓN -->
     <nav class="navegacion">
         <ul>
-            <li><a href="#">SSD Samsung 980 PRO</a></li>
-            <li>SSD Kingston KC3000</li>
-            <li>SSD WD Black SN850X</li>
-            <li>SSD Crucial P3 Plus</li>
-            <li>SSD Corsair MP600</li>
+            <li><a href="#samsung">Samsung 980 PRO</a></li>
+            <li><a href="#kingston">Kingston KC3000</a></li>
+            <li><a href="#wd">WD Black SN850X</a></li>
+            <li><a href="#crucial">Crucial P3 Plus</a></li>
+            <li><a href="#corsair">Corsair MP600</a></li>
         </ul>
     </nav>
 
-    <section class="catalogo">
-        <article>
-            <h2>SSD Samsung 980 PRO</h2>
-            <p>Recomiendo el Samsung 980 PRO porque ofrece altas velocidades, gran rendimiento y fiabilidad, siendo una
-                excelente opción para mejorar el funcionamiento del PC</p>
-            <p>Capacidad a la venta: 250 GB, 500 GB, 1 TB y 2 TB</p>
-            <p>Formato: M.2 2280</p>
-            <p>Interfaz: PCIe 4.0 x4.</p>
-            <p>Velocidad de lectura: Hasta 7.000 MB/s</p>
-            <p>Velocidad de escritura: Hasta 5.000 MB/s (1 TB)</p>
-        </article>
-        <img src="https://m.media-amazon.com/images/I/71T-1hjf9EL._AC_SX679_.jpg">
-        <mark>"En oferta"</mark>
-        <time datetime="05/11/2026"></time>
-        <button>comprar</button>
-    </section>
-    <section class="catalogo">
-        <article>
-            <h2>SSD Kingston KC3000</h2>
-            <p>Recomiendo el Kingston KC3000 porque ofrece velocidades de lectura y escritura muy elevadas, gran
-                capacidad y
-                excelente rendimiento, ideal para gaming y tareas exigentes</p>
-            <summary></summary>
-            <p>Capacidades a la venta: 512 GB, 1 TB, 2 TB y 4 TB</p>
-            <p>Formato: M.2 2280</p>
-            <p>Interfaz: PCIe 4.0 x4</p>
-            <p>Protocolo: NVMe 1.4</p>
-            <p>Velocidad de lectura: Hasta 7.000 MB/s.</p>
-            <p>Velocidad de escritura: Hasta 7.000 MB/s (según capacidad)</p>
-            </summary>
-        </article>
-        <img src="https://media.kingston.com/kingston/product/ktc-product-ssd-kc3000-2048gb-1-zm-lg.jpg">
-        <mark>"En oferta"</mark>
-        <time datetime="05/11/2026"></time>
-        <button>comprar</button>
-    </section>
-    <section class="catalogo">
-        <article>
-            <h2>SSD WD Black SN850X</h2>
-            <p>Recomiendo el WD_BLACK SN850X porque ofrece velocidades excepcionales, gran capacidad y un rendimiento
-                excelente, siendo ideal para gaming y aplicaciones exigentes</p>
-            <summary>
-                <p>Capacidades a la venta: 1 TB, 2 TB, 4 TB y 8 TB</p>
-                <p>Formato: M.2 2280</p>
-                <p>Interfaz: PCIe 4.0 x4</p>
-                <p>Protocolo: NVMe</p>
-                <p>Velocidad de lectura: Hasta 7.300 MB/s</p>
-                <p>Velocidad de escritura: Hasta 6.600 MB/s (según capacidad)</p>
-            </summary>
-        </article>
-        <img
-            src="https://www.sandisk.com/content/dam/sandisk/en-us/assets/products/internal-storage/wd-black-sn850x-nvme-ssd/gallery/wd-black-sn850x-nvme-ssd-front.png.wdthumb.1280.1280.webp">
-        <mark>"En oferta"</mark>
-        <time datetime="05/11/2026"></time>
-        <button>comprar</button>
-    </section>
-    <section class="catalogo">
-        <article>
-            <h2>SSD Crucial P3 Plus</h2>
-            <p>Recomiendo el Crucial P3 Plus porque ofrece una buena relación calidad-precio, velocidades rápidas y
-                diferentes capacidades, siendo una opción ideal para mejorar el almacenamiento del PC</p>
-            <summary>
-                <p>Capacidades a la venta: 500 GB, 1 TB, 2 TB y 4 TB</p>
-                <p>Formato: M.2 2280</p>
-                <p>Interfaz: PCIe 4.0 x4</p>
-                <p>Protocolo: NVMe 1.4</p>
-                <p>Velocidad de lectura: Hasta 5.000 MB/s</p>
-                <p>Velocidad de escritura: Hasta 4.200 MB/s</p>
-            </summary>
-        </article>
-        <img src="https://m.media-amazon.com/images/I/51xZaoS+Q1L._AC_SX679_.jpg">
-        <mark>"En oferta"</mark>
-        <time datetime="05/11/2026"></time>
-        <button>comprar</button>
-    </section>
-    <section class="catalogo">
-        <article>
-            <h2>SSD Corsair MP600</h2>
-            <p>Recomiendo el Corsair MP600 porque ofrece altas velocidades de transferencia, buena durabilidad y
-                refrigeración eficiente, siendo una excelente opción para equipos gaming y de alto rendimiento</p>
-            <summary>
-                <p>Capacidades a la venta: 500 GB, 1 TB y 2 TB</p>
-                <p>Formato: M.2 2280</p>
-                <p>Interfaz: PCIe 4.0 x4</p>
-                <p>Protocolo: NVMe </p>
-                <p>Velocidad de lectura: Hasta 4.950 MB/s</p>
-                <p>Velocidad de escritura: Hasta 4.250 MB/s</p>
-            </summary>
-        </article>
-        <img src="https://m.media-amazon.com/images/I/71X5EYRw9OL._AC_SX679_.jpg">
-        <mark>"En oferta"</mark>
-        <time datetime="05/11/2026"></time>
-        <button>comprar</button>
-    </section>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- CATÁLOGO DE PRODUCTOS -->
+        <section class="catalogo">
+
+            <!-- PRODUCTO 1 -->
+            <article id="samsung">
+
+                <figure>
+                    <img src="https://m.media-amazon.com/images/I/71T-1hjf9EL._AC_SX679_.jpg"
+                        alt="SSD Samsung 980 PRO">
+                    <figcaption>SSD de alto rendimiento</figcaption>
+                </figure>
+
+                <h2>SSD Samsung 980 PRO</h2>
+
+                <p>Recomiendo el Samsung 980 PRO porque ofrece altas velocidades, gran rendimiento y fiabilidad, siendo una excelente opción para mejorar el funcionamiento del PC.</p>
+
+                <div class="especificaciones">
+                    <p>Capacidad: 250 GB, 500 GB, 1 TB y 2 TB</p>
+                    <p>Formato: M.2 2280</p>
+                    <p>Interfaz: PCIe 4.0 x4</p>
+                    <p>Velocidad de lectura: Hasta 7.000 MB/s</p>
+                    <p>Velocidad de escritura: Hasta 5.000 MB/s (1 TB)</p>
+                </div>
+
+                <mark>En oferta</mark>
+
+                <time datetime="2026-11-05">Actualizado: 05/11/2026</time>
+
+                <details>
+                    <summary>Especificaciones secundarias</summary>
+                    <p>Protocolo: NVMe 1.3c</p>
+                    <p>Memoria: V-NAND</p>
+                </details>
+
+                <div class="acciones">
+                    <button>Comprar</button>
+                    <button class="comparar">Comparar</button>
+                </div>
+
+            </article>
+
+            <!-- PRODUCTO 2 -->
+            <article id="kingston">
+
+                <figure>
+                    <img src="https://media.kingston.com/kingston/product/ktc-product-ssd-kc3000-2048gb-1-zm-lg.jpg"
+                        alt="SSD Kingston KC3000">
+                    <figcaption>SSD para gaming y tareas exigentes</figcaption>
+                </figure>
+
+                <h2>SSD Kingston KC3000</h2>
+
+                <p>Recomiendo el Kingston KC3000 porque ofrece velocidades de lectura y escritura muy elevadas, gran capacidad y excelente rendimiento, ideal para gaming y tareas exigentes.</p>
+
+                <div class="especificaciones">
+                    <p>Capacidades: 512 GB, 1 TB, 2 TB y 4 TB</p>
+                    <p>Formato: M.2 2280</p>
+                    <p>Interfaz: PCIe 4.0 x4</p>
+                    <p>Protocolo: NVMe 1.4</p>
+                    <p>Velocidad de lectura: Hasta 7.000 MB/s</p>
+                    <p>Velocidad de escritura: Hasta 7.000 MB/s</p>
+                </div>
+
+                <mark>En oferta</mark>
+
+                <time datetime="2026-11-05">Actualizado: 05/11/2026</time>
+
+                <details>
+                    <summary>Especificaciones secundarias</summary>
+                    <p>Memoria: 3D TLC NAND</p>
+                    <p>Controlador: Phison E18</p>
+                </details>
+
+                <div class="acciones">
+                    <button>Comprar</button>
+                    <button class="comparar">Comparar</button>
+                </div>
+
+            </article>
+
+            <!-- PRODUCTO 3 -->
+            <article id="wd">
+
+                <figure>
+                    <img src="https://www.sandisk.com/content/dam/sandisk/en-us/assets/products/internal-storage/wd-black-sn850x-nvme-ssd/gallery/wd-black-sn850x-nvme-ssd-front.png.wdthumb.1280.1280.webp"
+                        alt="SSD WD Black SN850X">
+                    <figcaption>SSD de alto rendimiento para gaming</figcaption>
+                </figure>
+
+                <h2>SSD WD Black SN850X</h2>
+
+                <p>Recomiendo el WD Black SN850X porque ofrece velocidades excepcionales, gran capacidad y un rendimiento excelente, siendo ideal para gaming y aplicaciones exigentes.</p>
+
+                <div class="especificaciones">
+                    <p>Capacidades: 1 TB, 2 TB, 4 TB y 8 TB</p>
+                    <p>Formato: M.2 2280</p>
+                    <p>Interfaz: PCIe 4.0 x4</p>
+                    <p>Protocolo: NVMe</p>
+                    <p>Velocidad de lectura: Hasta 7.300 MB/s</p>
+                    <p>Velocidad de escritura: Hasta 6.600 MB/s</p>
+                </div>
+
+                <mark>En oferta</mark>
+
+                <time datetime="2026-11-05">Actualizado: 05/11/2026</time>
+
+                <details>
+                    <summary>Especificaciones secundarias</summary>
+                    <p>Memoria: 3D NAND</p>
+                    <p>Formato: SSD interno M.2</p>
+                </details>
+
+                <div class="acciones">
+                    <button>Comprar</button>
+                    <button class="comparar">Comparar</button>
+                </div>
+
+            </article>
+
+            <!-- PRODUCTO 4 -->
+            <article id="crucial">
+
+                <figure>
+                    <img src="https://m.media-amazon.com/images/I/51xZaoS+Q1L._AC_SX679_.jpg"
+                        alt="SSD Crucial P3 Plus">
+                    <figcaption>SSD con buena relación calidad-precio</figcaption>
+                </figure>
+
+                <h2>SSD Crucial P3 Plus</h2>
+
+                <p>Recomiendo el Crucial P3 Plus porque ofrece una buena relación calidad-precio, velocidades rápidas y diferentes capacidades, siendo una opción ideal para mejorar el almacenamiento del PC.</p>
+
+                <div class="especificaciones">
+                    <p>Capacidades: 500 GB, 1 TB, 2 TB y 4 TB</p>
+                    <p>Formato: M.2 2280</p>
+                    <p>Interfaz: PCIe 4.0 x4</p>
+                    <p>Protocolo: NVMe 1.4</p>
+                    <p>Velocidad de lectura: Hasta 5.000 MB/s</p>
+                    <p>Velocidad de escritura: Hasta 4.200 MB/s</p>
+                </div>
+
+                <mark>En oferta</mark>
+
+                <time datetime="2026-11-05">Actualizado: 05/11/2026</time>
+
+                <details>
+                    <summary>Especificaciones secundarias</summary>
+                    <p>Memoria: QLC NAND</p>
+                    <p>Formato: SSD interno M.2</p>
+                </details>
+
+                <div class="acciones">
+                    <button>Comprar</button>
+                    <button class="comparar">Comparar</button>
+                </div>
+
+            </article>
+
+            <!-- PRODUCTO 5 -->
+            <article id="corsair">
+
+                <figure>
+                    <img src="https://m.media-amazon.com/images/I/71X5EYRw9OL._AC_SX679_.jpg"
+                        alt="SSD Corsair MP600">
+                    <figcaption>SSD para equipos gaming</figcaption>
+                </figure>
+
+                <h2>SSD Corsair MP600</h2>
+
+                <p>Recomiendo el Corsair MP600 porque ofrece altas velocidades de transferencia, buena durabilidad y refrigeración eficiente, siendo una excelente opción para equipos gaming y de alto rendimiento.</p>
+
+                <div class="especificaciones">
+                    <p>Capacidades: 500 GB, 1 TB y 2 TB</p>
+                    <p>Formato: M.2 2280</p>
+                    <p>Interfaz: PCIe 4.0 x4</p>
+                    <p>Protocolo: NVMe</p>
+                    <p>Velocidad de lectura: Hasta 4.950 MB/s</p>
+                    <p>Velocidad de escritura: Hasta 4.250 MB/s</p>
+                </div>
+
+                <mark>En oferta</mark>
+
+                <time datetime="2026-11-05">Actualizado: 05/11/2026</time>
+
+                <details>
+                    <summary>Especificaciones secundarias</summary>
+                    <p>Memoria: 3D TLC NAND</p>
+                    <p>Disipador térmico según modelo</p>
+                </details>
+
+                <div class="acciones">
+                    <button>Comprar</button>
+                    <button class="comparar">Comparar</button>
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>
+            <small>Hecho por Adrian Laprida Rojas - Todos los derechos están reservados.</small>
+        </p>
+    </footer>
+
 </body>
-<footer>
-    <p>Hecho por Adrian Laprida Rojas-Todos los derechos estan reservados</p>
-</footer>
 </html>

@@ -1,7 +1,7 @@
 
-/* =================================
+/* =====================================
    1. RESET Y BOX MODEL
-================================= */
+===================================== */
 
 * {
     box-sizing: border-box;
@@ -11,41 +11,44 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #eef2f7;
+    background-color: #f1f3f5;
     color: #263238;
     line-height: 1.6;
-    padding: 20px;
 }
 
-/* =================================
+/* =====================================
    2. CABECERA
-================================= */
+===================================== */
 
 .cabecera {
-    background: linear-gradient(135deg, #101f35, #1769aa);
-    color: white;
+    display: grid;
+    place-items: center;
     text-align: center;
-    padding: 35px 20px;
-    margin-bottom: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: #293e50;
+    color: white;
+    padding: 30px;
+    margin-bottom: 20px;
 }
 
 .cabecera h1 {
-    font-size: 2rem;
-    letter-spacing: 1px;
+    font-size: 28px;
 }
 
-/* =================================
+.cabecera p {
+    color: #dce5ed;
+    font-size: 16px;
+}
+
+/* =====================================
    3. NAVEGACIÓN
-================================= */
+===================================== */
 
 .navegacion {
-    background-color: #172b46;
-    padding: 18px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    background-color: #293e50;
+    padding: 15px;
+    margin-bottom: 25px;
 }
 
 .navegacion ul {
@@ -53,168 +56,221 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     list-style: none;
 }
 
-.navegacion li {
-    color: white;
-    font-weight: bold;
-}
-
 .navegacion a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .navegacion a:hover {
-    color: #55c5ff;
+    color: #42b5f5;
 }
 
-/* =================================
-   4. CATÁLOGO DE PRODUCTOS
-================================= */
+/* =====================================
+   4. CONTENEDOR GRID DE PRODUCTOS
+===================================== */
 
 .catalogo {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
 
-    background-color: white;
-    padding: 25px;
+    max-width: 1400px;
     margin: 25px auto;
-    max-width: 1200px;
-
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
 }
 
-.catalogo:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
-}
-
-/* Efecto al pasar el ratón */
-
-.catalogo:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
-}
-
-/* =================================
-   5. CONTENIDO DE LAS TARJETAS
-================================= */
+/* =====================================
+   5. TARJETAS DE PRODUCTOS
+===================================== */
 
 .catalogo article {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 1fr auto auto auto;
+
     gap: 12px;
+
+    background-color: white;
+    padding: 24px;
+    margin: 5px;
+
+    border: 1px solid #e0e5e9;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
 }
 
-.catalogo h2 {
-    color: #1769aa;
-    font-size: 1.4rem;
-    border-bottom: 2px solid #1769aa;
-    padding-bottom: 8px;
-    margin-bottom: 5px;
+/* EFECTO AL PASAR EL RATÓN */
+
+.catalogo article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.catalogo p {
-    font-size: 0.95rem;
-    color: #455a64;
-}
-
-/* =================================
+/* =====================================
    6. IMÁGENES
-================================= */
+===================================== */
+
+.catalogo figure {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    justify-items: center;
+}
 
 .catalogo img {
     width: 100%;
-    max-width: 350px;
     height: 220px;
     object-fit: contain;
-    justify-self: center;
-    align-self: center;
-    padding: 10px;
 }
 
-/* =================================
-   7. ETIQUETA DE OFERTA
-================================= */
+.catalogo figcaption {
+    color: #78909c;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* =====================================
+   7. TÍTULOS Y TEXTOS
+===================================== */
+
+.catalogo h2 {
+    color: #293e50;
+    font-size: 22px;
+}
+
+.catalogo p {
+    color: #78909c;
+    font-size: 15px;
+}
+
+/* =====================================
+   8. ESPECIFICACIONES
+===================================== */
+
+.especificaciones {
+    display: grid;
+    gap: 8px;
+}
+
+.especificaciones p {
+    color: #607d8b;
+    font-size: 14px;
+}
+
+/* =====================================
+   9. OFERTAS
+===================================== */
 
 .catalogo mark {
-    background-color: #dff7e5;
-    color: #16803c;
+    background-color: #f04e40;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
     font-weight: bold;
-    padding: 8px 14px;
-    border-radius: 20px;
     justify-self: start;
+    align-self: start;
 }
 
-/* =================================
-   8. FECHA
-================================= */
+/* =====================================
+   10. FECHA
+===================================== */
 
 .catalogo time {
-    color: #78909c;
-    font-size: 0.85rem;
+    color: #90a4ae;
+    font-size: 13px;
 }
 
-/* =================================
-   9. BOTONES
-================================= */
+/* =====================================
+   11. ESPECIFICACIONES DESPLEGABLES
+===================================== */
 
-.catalogo button {
-    background-color: #1769aa;
+.catalogo details {
+    color: #3498db;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.catalogo summary {
+    font-weight: bold;
+}
+
+.catalogo details p {
+    color: #607d8b;
+    margin-top: 8px;
+}
+
+/* =====================================
+   12. BOTONES
+===================================== */
+
+.acciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    align-self: end;
+    margin-top: 10px;
+}
+
+.acciones button {
+    background-color: #3498db;
     color: white;
     border: none;
-    padding: 12px 25px;
-    border-radius: 8px;
-    font-size: 1rem;
+    padding: 12px 10px;
+    border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
 
-    justify-self: start;
-    align-self: end;
-
-    transition: background-color 0.3s ease,
-                transform 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
-.catalogo button:hover {
-    background-color: #0d4778;
-    transform: scale(1.05);
+.acciones button:hover {
+    background-color: #217dbb;
 }
 
-/* =================================
-   10. PIE DE PÁGINA
-================================= */
+.acciones .comparar {
+    background-color: #e9eef1;
+    color: #293e50;
+}
+
+.acciones .comparar:hover {
+    background-color: #cbd5dc;
+}
+
+/* =====================================
+   13. PIE DE PÁGINA
+===================================== */
 
 footer {
-    background-color: #172b46;
+    display: grid;
+    place-items: center;
+
+    background-color: #293e50;
     color: white;
+
     text-align: center;
     padding: 20px;
     margin-top: 35px;
-    border-radius: 10px;
-    font-size: 0.9rem;
 }
 
-/* =================================
-   11. RESPONSIVE
-================================= */
+/* =====================================
+   14. DISEÑO RESPONSIVE
+===================================== */
 
 @media (max-width: 600px) {
 
-    body {
-        padding: 10px;
-    }
-
     .cabecera h1 {
-        font-size: 1.4rem;
+        font-size: 21px;
     }
 
     .navegacion ul {
@@ -223,10 +279,10 @@ footer {
     }
 
     .catalogo {
-        padding: 15px;
+        padding: 10px;
     }
 
-    .catalogo img {
-        height: 180px;
+    .catalogo article {
+        padding: 18px;
     }
 }
